@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --color_primary: #24232b;
+  --color_secundary: #7353ba;
+  --color_d: #d8c9f0;
+  --font_size: 1.5rem;
+  --logo_size: 3.45rem;
+}
+/*specif elements of html*/
+body {
+  background-color: aqua;
+}
+
+li {
+  font-style: none;
+}
+/*every class in project*/
+.cabecalho {
+  background-color: var(--color_primary);
+}
+.main_content {
+  background-color: var(--color_d);
+}
+/*id specifics itens*/
+
+#logotipo {
+  width: var(--logo_size);
+  height: var(--logo_size);
+}
