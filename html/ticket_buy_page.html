@@ -1,53 +1,89 @@
-
-
 <!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/buy_ticket.css" />
-    <title>Spwan Point</title>
+    <title>Ingressos | Spawn Point</title>
   </head>
 
   <body>
     <header class="cabecalho">
       <div class="cabecalho_content">
-        <img id="logotipo" src="../img/logo_Spwan_point.png" />
+        <a href="home.html" class="marca">
+          <img id="logotipo" src="../img/logo_Spwan_point.png" alt="Logo do Spawn Point" />
+          <span class="nome_evento">Spawn Point</span>
+        </a>
         <nav>
           <ul>
-            <li><a href="/">Faq</a></li>
-            <li><a href="/">O evento</a></li>
-            <li><a href="/">Calendario</a></li>
-            <li><a href="/">ingressos</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="faq.html">Faq</a></li>
+            <li><a href="evento.html">O evento</a></li>
+            <li><a href="calendario.html">Calendário</a></li>
+            <li class="item_ingressos"><a href="ticket_buy_page.html" class="btn_ingressos" aria-current="page">Ingressos</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main>
-      
-      <div class="all_cards_content">
-        <div class="cards">
-          <img class="cards_img" src="../img/Ingresso_Spwan_point.png" alt="produtos">
-          <div class="card_text">
-            <h3>Titulo</h3>
-            <p>breve descricao do card</p>
-          </div>
-        </div>
-        /*add more cards later.*/
-      </div>
+      <h1>Ingressos</h1>
 
+      <section class="all_cards_content">
+  <article class="cards">
+    <img class="cards_img" src="../img/Ingresso_Spwan_point.png" alt="">
+    <div class="card_text">
+      <h2>Ingresso Pista</h2>
+      <p class="preco">R$ 40,00</p>
+      <ul>
+        <li>Acesso a todas as áreas do evento</li>
+        <li>Participação nos jogos livres</li>
+        <li>Válido para 13/10/2026</li>
+      </ul>
+    </div>
+    <a href="#" class="btn_card">Comprar ingresso Pista</a>
+  </article>
 
-      
+  <article class="cards cards_destaque">
+    <img class="cards_img" src="../img/Ingresso_Spwan_point.png" alt="">
+    <div class="card_text">
+      <h2>Ingresso VIP</h2>
+      <p class="preco">R$ 90,00</p>
+      <ul>
+        <li>Tudo do ingresso Pista</li>
+        <li>Entrada prioritária</li>
+        <li>Brinde exclusivo do evento</li>
+      </ul>
+    </div>
+    <a href="#" class="btn_card">Comprar ingresso VIP</a>
+  </article>
+
+  <article class="cards">
+    <img class="cards_img" src="../img/Ingresso_Spwan_point.png" alt="">
+    <div class="card_text">
+      <h2>Meia-entrada</h2>
+      <p class="preco">R$ 20,00</p>
+      <ul>
+        <li>Para estudantes e demais casos previstos em lei</li>
+        <li>Mesmos benefícios do ingresso Pista</li>
+        <li>Documento comprobatório na entrada</li>
+      </ul>
+    </div>
+    <a href="#" class="btn_card">Comprar meia-entrada</a>
+  </article>
+</section>
     </main>
 
     <footer class="rodape">
-      <p>&copy; 2026 todos os direitos reservados</p>
-      <p>organizadoria AkG</p>
-      <a>Central de ajuda</a>
-      <a>Politica de privacidade</a>
-      <img src="../img/akg_organizaora.png" alt="logotipo AkG" id="logo_akg">
-
+      <div class="footer_AKG_side">
+        <img src="../img/akg_organizaora.png" alt="Logotipo da AKG" id="logo_akg">
+        <p>&copy; 2026 todos os direitos reservados</p>
+        <p>Organizadoria AKG</p>
+      </div>
+      <div class="footer_elements_event_side">
+        <a href="#">Central de ajuda</a>
+        <a href="#">Política de privacidade</a>
+      </div>
     </footer>
   </body>
 </html>

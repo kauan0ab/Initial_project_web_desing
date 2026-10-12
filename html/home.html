@@ -4,85 +4,97 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
-    <title>Spwan Point</title>
+    <title>Spawn Point</title>
   </head>
 
   <body>
     <header class="cabecalho">
       <div class="cabecalho_content">
-        <img id="logotipo" src="../img/logo_Spwan_point.png" />
+        <a href="home.html" class="marca">
+          <img id="logotipo" src="../img/logo_Spwan_point.png" alt="Logo do Spawn Point" />
+          <span class="nome_evento">Spawn Point</span>
+        </a>
         <nav>
           <ul>
+            <li><a href="/" aria-current="page">Home</a></li>
             <li><a href="/">Faq</a></li>
-            <li><a href="/">O evento</a></li>
-            <li><a href="/">Calendario</a></li>
-            <li><a href="/">ingressos</a></li>
+            <li><a href="/" data-scroll-to="">O evento</a></li>
+            <li><a href="calendario.html">Calendário</a></li>
+            <li class="item_ingressos"><a href="ticket_buy_page.html" class="btn_ingressos">Ingressos</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main>
-      <h1>Spawn Point</h1>
-      <h2>Onde o universo dos games ganha vida</h2>
-      
-      <p>Prepare-se para entrar em um universo onde games, cultura geek e
+      <div class="initial_apresentation">
+        <h1>Spawn Point</h1>
+        <h2>Onde o universo dos games ganha vida</h2>
+
+        <p>Prepare-se para entrar em um universo onde games, cultura geek e
         diversão se encontram! O Spawn Point é um evento criado para reunir fãs
         de jogos eletrônicos, animes, filmes, séries e tudo aquilo que faz parte
         da cultura nerd. Um espaço para compartilhar paixões, conhecer pessoas
         com os mesmos interesses, participar de atividades e viver experiências
         únicas.</p>
 
-      <p>Seja você um gamer competitivo, um fã de grandes sagas ou alguém que
+        <p>Seja você um gamer competitivo, um fã de grandes sagas ou alguém que
         simplesmente ama esse universo, o Spawn Point é o lugar ideal para se
         conectar com a comunidade geek. Reúna seus amigos, prepare seus
         controles e venha fazer parte dessa aventura!</p>
 
-        
-      <h3>sua próxima aventura começa aqui!</h3>
-
-      <img src="../img/spwan_point_poster.jpg" id="apresentation_poster" alt="poster do evento data 13/10/2026">
-        <h2>Muito além de jogar</h2>
-
-        <p>O Spawn Point foi pensado para proporcionar um ambiente de interação, entretenimento e descoberta. Os jogos eletrônicos vão além da tela: envolvem estratégia, criatividade, trabalho em equipe e desafios que podem ser compartilhados entre pessoas com diferentes experiências e interesses. O evento busca reunir esses elementos em um espaço onde o público possa aproveitar atividades variadas e conhecer novas formas de se conectar com esse universo.</p>
-
-        <h2>O que você vai encontrar?</h2>
-
-        <p>A proposta do Spawn Point é oferecer uma programação diversificada, com atividades que valorizam tanto a participação individual quanto a interação entre os visitantes. Entre as possibilidades estão partidas de jogos eletrônicos, desafios, competições amistosas e momentos de convivência, criando oportunidades para testar habilidades, aprender algo novo e compartilhar experiências.</p>
-
-        <p>Além dos jogos, o evento também abre espaço para outras formas de entretenimento ligadas ao universo dos games, como referências a personagens, histórias, produções audiovisuais e diferentes expressões artísticas. A intenção é proporcionar uma experiência que vá além de uma única atividade, permitindo que cada participante encontre algo de seu interesse.</p>
-        <h3>Diversão, interação e novas experiências</h3>
-        <p>Um evento também é construído pelas pessoas que participam dele. Por isso, o Spawn Point valoriza a convivência, a troca de conhecimentos e o respeito entre os visitantes. Seja para competir, acompanhar as atividades ou simplesmente aproveitar o ambiente, cada pessoa pode participar de acordo com seus próprios interesses.</p>
-
-        <p>A interação entre os participantes também permite descobrir novos jogos, trocar recomendações e conhecer diferentes perspectivas sobre atividades que fazem parte do cotidiano de muitas pessoas. Dessa forma, o encontro se torna uma oportunidade de lazer e de aproximação entre pessoas que compartilham interesses em comum.</p>
-        <h2>espaço para participar</h2> 
-
-        <p>O Spawn Point convida o público a sair da rotina e participar de uma experiência coletiva. Mais do que acompanhar uma programação, a proposta é aproveitar o momento, experimentar atividades e criar boas lembranças ao lado de outras pessoas. </p>
-
-        <p>Prepare-se para conhecer novas possibilidades, encarar desafios e aproveitar cada momento. Afinal, toda grande aventura começa com o primeiro passo — e o seu próximo ponto de partida pode ser aqui.</p>
-      <a  href="ticket_buy_page.html" id="buy_ticket">Comprar ingressos</a>
-      <div class="all_cards_content">
-        <div class="cards">
-          <img class="cards_img" src="../img/Ingresso_Spwan_point.png" alt="produtos">
-          <div class="card_text">
-            <h3>Titulo</h3>
-            <p>breve descricao do card</p>
-          </div>
+        <h3>Sua próxima aventura começa aqui</h3>
         </div>
-        /*add more cards later.*/
-      </div>
-
+      <img src="../img/Tcl_img.webp" id="apresentation_poster" alt="Pôster do evento Spawn Point, dia 13/10/2026">
 
       
+      <section class="bloco_imagem">
+        <img class="imgs_peoples" src="../img/people_in_event.webp" alt="Público se divertindo em um evento">
+        <div class="bloco_texto">
+          <h2>Muito além de jogar</h2>
+
+          <p>O Spawn Point foi pensado para proporcionar um ambiente de interação, entretenimento e descoberta. Os jogos eletrônicos vão além da tela: envolvem estratégia, criatividade, trabalho em equipe e desafios que podem ser compartilhados entre pessoas com diferentes experiências e interesses. O evento busca reunir esses elementos em um espaço onde o público possa aproveitar atividades variadas e conhecer novas formas de se conectar com esse universo.</p>
+
+          <h2>O que você vai encontrar?</h2>
+
+          <p>A proposta do Spawn Point é oferecer uma programação diversificada, com atividades que valorizam tanto a participação individual quanto a interação entre os visitantes. Entre as possibilidades estão partidas de jogos eletrônicos, desafios, competições amistosas e momentos de convivência, criando oportunidades para testar habilidades, aprender algo novo e compartilhar experiências.</p>
+
+          <p>Além dos jogos, o evento também abre espaço para outras formas de entretenimento ligadas ao universo dos games, como referências a personagens, histórias, produções audiovisuais e diferentes expressões artísticas. A intenção é proporcionar uma experiência que vá além de uma única atividade, permitindo que cada participante encontre algo de seu interesse.</p>
+
+        </div>
+      </section>
+
+      <section class="bloco_imagem">
+        <div class="bloco_texto">
+          <h2>Diversão, interação e novas experiências</h2>
+          <p>Um evento também é construído pelas pessoas que participam dele. Por isso, o Spawn Point valoriza a convivência, a troca de conhecimentos e o respeito entre os visitantes. Seja para competir, acompanhar as atividades ou simplesmente aproveitar o ambiente, cada pessoa pode participar de acordo com seus próprios interesses.</p> 
+
+          <p>A interação entre os participantes também permite descobrir novos jogos, trocar recomendações e conhecer diferentes perspectivas sobre atividades que fazem parte do cotidiano de muitas pessoas. Dessa forma, o encontro se torna uma oportunidade de lazer e de aproximação entre pessoas que compartilham interesses em comum.</p>
+          <h2>Espaço para participar</h2>
+
+          <p>O Spawn Point convida o público a sair da rotina e participar de uma experiência coletiva. Mais do que acompanhar uma programação, a proposta é aproveitar o momento, experimentar atividades e criar boas lembranças ao lado de outras pessoas.</p>
+
+          <p>Prepare-se para conhecer novas possibilidades, encarar desafios e aproveitar cada momento. Afinal, toda grande aventura começa com o primeiro passo, e o seu próximo ponto de partida pode ser aqui.</p>
+        </div>
+        <img class="imgs_peoples" src="../img/second_people_event.webp" alt="Grupo de participantes reunidos durante o evento">
+      </section>
+
+      
+
+      <a href="ticket_buy_page.html" id="buy_ticket">Comprar ingressos</a>
     </main>
 
     <footer class="rodape">
-      <p>&copy; 2026 todos os direitos reservados</p>
-      <p>organizadoria AkG</p>
-      <a>Central de ajuda</a>
-      <a>Politica de privacidade</a>
-      <img src="../img/akg_organizaora.png" alt="logotipo AkG" id="logo_akg">
-
+      <div class="footer_AKG_side">
+        <img src="../img/akg_organizaora.png" alt="Logotipo da AKG" id="logo_akg">
+        <p>Organizadoria AKG</p>
+        <p>&copy; 2026 todos os direitos reservados</p>
+        
+      </div>
+      <div class="footer_elements_event_side">
+        <a href="#">Central de ajuda</a>
+        <a href="#">Política de privacidade</a>
+      </div>
     </footer>
   </body>
 </html>
