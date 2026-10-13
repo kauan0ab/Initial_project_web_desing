@@ -17,6 +17,8 @@
   --space_page: 3.125rem;
   --color_accent_dark: #4b2f8a;
   --gradient_cta: linear-gradient(90deg, var(--color_accent_dark), var(--color_accent));
+  --font_title: "Orbitron", sans-serif;
+  --font_body: "Poppins", sans-serif;
 }
 
 /* base */
@@ -26,6 +28,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: var(--font_body);
 }
 
 main {
@@ -39,6 +42,7 @@ main h1,
 main h2,
 main h3 {
   margin: 1.5rem 0 0.75rem;
+  font-family: var(--font_title);
 }
 
 main p {
@@ -75,7 +79,7 @@ nav a[aria-current="page"] {
   background-color: var(--color_primary);
   position: sticky;
   top: 0;
-  z-index: 10;
+  
 }
 
 .cabecalho_content {
@@ -183,11 +187,15 @@ nav a[aria-current="page"] {
   background: var(--gradient_cta);
   color: var(--color_button_text);
   text-decoration: none;
-  display: inline-block;
+  display: block;
+  justify-content: center;
+  margin: 1rem auto 0;
   padding: 0.9rem 1.5rem;
   border-radius: 99px;
+  width: fit-content;
   font-weight: bold;
   margin-top: 1rem;
+  
 }
 #logotipo {
   width: var(--logo_size);

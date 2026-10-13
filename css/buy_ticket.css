@@ -16,6 +16,8 @@
   --logo_size: 3.45rem;
   --space_nav: 2.5rem;
   --space_page: 3.125rem;
+  --font_title: "Orbitron", sans-serif;
+  --font_body: "Poppins", sans-serif;
 }
 
 /* base */
