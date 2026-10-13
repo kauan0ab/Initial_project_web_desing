@@ -21,9 +21,9 @@
   --font_body: "Poppins", sans-serif;
 }
 
-/* base */
+/*html elements section*/
 body {
-  background-color: white;
+  background-color: rgb(222, 218, 218);
   color: var(--color_text);
   min-height: 100vh;
   display: flex;
@@ -70,11 +70,8 @@ nav a {
   text-decoration: none;
 }
 
-nav a[aria-current="page"] {
-  text-decoration: underline;
-}
 
-/* header */
+/*class section*/
 .cabecalho {
   background-color: var(--color_primary);
   position: sticky;
@@ -106,10 +103,8 @@ nav a[aria-current="page"] {
   background: var(--gradient_cta);
   padding: 0.7rem 1.5rem;
   border-radius: 99px;
-  display: inline-block;
   font-weight: bold;
 }
-
 
 
 .bloco_imagem {
@@ -127,7 +122,6 @@ nav a[aria-current="page"] {
   width: 35rem;
   height: 25rem;
   object-fit: cover;
-  flex-shrink: 0;
 }
 
 .initial_apresentation{
@@ -135,7 +129,6 @@ nav a[aria-current="page"] {
   align-items: center;
   flex-direction: column;
 }
-
 
 .all_cards_content {
   display: flex;
@@ -158,7 +151,6 @@ nav a[aria-current="page"] {
   width: auto;
 }
 
-/* footer */
 .rodape {
   background-color: var(--color_primary);
   color: var(--color_text);
@@ -178,7 +170,7 @@ nav a[aria-current="page"] {
 .rodape a {
   color: var(--color_text);
 }
-
+/*id section*/
 #logo_akg {
   height: 60px;
   width: 60px;

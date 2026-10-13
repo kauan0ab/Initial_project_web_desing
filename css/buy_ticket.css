@@ -67,11 +67,7 @@ nav a {
   text-decoration: none;
 }
 
-nav a[aria-current="page"] {
-  text-decoration: underline;
-}
 
-/* header */
 .cabecalho {
   background-color: var(--color_primary);
   position: sticky;
@@ -129,10 +125,9 @@ nav a[aria-current="page"] {
   flex-shrink: 0;
 }
 
-/* botao comprar */
 
 
-/* cards de ingresso */
+
 .all_cards_content {
   display: flex;
   flex-wrap: wrap;
@@ -187,7 +182,7 @@ nav a[aria-current="page"] {
   border-radius: 99px;
 }
 
-/* footer */
+
 .rodape {
   margin-top: auto;
   background-color: var(--color_primary);
@@ -228,7 +223,7 @@ nav a[aria-current="page"] {
   height: var(--logo_size);
 }
 
-/* imagens e blocos */
+
 #apresentation_poster {
   display: block;
   width: calc(100% + 4 * var(--space_page));
