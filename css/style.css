@@ -16,12 +16,15 @@
   --space_nav: 2.5rem;
   --space_page: 3.125rem;
   --color_accent_dark: #4b2f8a;
-  --gradient_cta: linear-gradient(90deg, var(--color_accent_dark), var(--color_accent));
   --font_title: "Orbitron", sans-serif;
   --font_body: "Poppins", sans-serif;
 }
 
 /*html elements section*/
+html{
+  scroll-behavior: smooth ;
+}
+
 body {
   background-color: rgb(222, 218, 218);
   color: var(--color_text);
@@ -70,8 +73,28 @@ nav a {
   text-decoration: none;
 }
 
+table {
+  table-layout: fixed;
+  margin-top: 5rem;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--color_secundary);
+}
+
+th,
+td {
+  padding: 1rem 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid var(--color_accent);
+  border-right:1px solid var(--color_accent);
+}
+
+th {
+  background-color: var(--color_accent);
+}
 
 /*class section*/
+
 .cabecalho {
   background-color: var(--color_primary);
   position: sticky;
@@ -97,6 +120,7 @@ nav a {
 
 .item_ingressos {
   margin-left: auto;
+  
 }
 
 .btn_ingressos {
@@ -150,7 +174,6 @@ nav a {
   height: 85px;
   width: auto;
 }
-
 .rodape {
   background-color: var(--color_primary);
   color: var(--color_text);
