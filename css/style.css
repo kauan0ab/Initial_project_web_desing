@@ -5,20 +5,19 @@
 
 :root {
   --color_primary: #0F0F1A;
-  --color_secundary: #2A1618;
-  --color_d: #0e0e23;
-  --color_accent: #c62839;
-  --color_text: #ffffff;
+  --color_secundary: #1a1a33;
+  --color_d: #14142b;
+  --color_accent: #e0334a;
+  --color_red_dark: #621d34;
+  --color_text: #f2f2f7;
   --color_button_text: #ffffff;
-  --gradient_cta: linear-gradient(90deg, var(--color_secundary), var(--color_accent));
+    --color_accent_dark: #5b3fb5;
+  --gradient_cta: linear-gradient(90deg, var(--color_accent_dark), var(--color_accent));
   --font_size: 1.5rem;
   --logo_size: 3.45rem;
   --space_nav: 2.5rem;
   --space_page: 3.125rem;
-  --color_accent_dark: #4b2f8a;
-  --font_title: "Orbitron", sans-serif;
-  --font_body: "Poppins", sans-serif;
-}
+  }
 
 /*html elements section*/
 html{
@@ -26,12 +25,13 @@ html{
 }
 
 body {
-  background-color: rgb(222, 218, 218);
+  background-color: var(--color_primary);
   color: var(--color_text);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   font-family: var(--font_body);
+  font-family: Arial, sans-serif;
 }
 
 main {
@@ -45,7 +45,6 @@ main h1,
 main h2,
 main h3 {
   margin: 1.5rem 0 0.75rem;
-  font-family: var(--font_title);
 }
 
 main p {
@@ -75,22 +74,34 @@ nav a {
 
 table {
   table-layout: fixed;
-  margin-top: 5rem;
+  margin-top: 1rem;
   width: 100%;
   border-collapse: collapse;
   background-color: var(--color_secundary);
 }
 
-th,
+th {
+  background-color: var(--color_accent_dark);
+  padding: 1rem;
+  font-family: var(--font_title);
+  font-size: 0.9rem;
+}
+
 td {
   padding: 1rem 1.5rem;
   text-align: center;
-  border-bottom: 1px solid var(--color_accent);
-  border-right:1px solid var(--color_accent);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-th {
-  background-color: var(--color_accent);
+td:first-child {
+  color: var(--color_accent_dark);
+  font-weight: bold;
+}
+
+tbody tr:hover {
+  background-color: rgba(181, 46, 181, 0.12);
 }
 
 /*class section*/
@@ -99,7 +110,7 @@ th {
   background-color: var(--color_primary);
   position: sticky;
   top: 0;
-  
+  z-index: 10;
 }
 
 .cabecalho_content {
@@ -125,7 +136,7 @@ th {
 
 .btn_ingressos {
   background: var(--gradient_cta);
-  padding: 0.7rem 1.5rem;
+  padding: 0.7rem .5rem;
   border-radius: 99px;
   font-weight: bold;
 }
@@ -138,14 +149,13 @@ th {
   margin: 2rem 0;
 }
 
-.bloco_texto {
-  flex: 1;
-}
-
 .imgs_peoples {
   width: 35rem;
   height: 25rem;
   object-fit: cover;
+  border-radius: 30px;
+  border: 0.05rem solid;
+  border-color: var(--color_red_dark);
 }
 
 .initial_apresentation{
@@ -154,26 +164,6 @@ th {
   flex-direction: column;
 }
 
-.all_cards_content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-}
-
-.cards {
-  background-color: var(--color_d);
-  color: var(--color_primary);
-  padding: 1rem;
-  border-radius: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.cards_img {
-  height: 85px;
-  width: auto;
-}
 .rodape {
   background-color: var(--color_primary);
   color: var(--color_text);
@@ -182,6 +172,7 @@ th {
   align-items: center;
   padding: 1rem var(--space_page);
 }
+
 
 .footer_AKG_side,
 .footer_elements_event_side {
@@ -192,6 +183,24 @@ th {
 
 .rodape a {
   color: var(--color_text);
+}
+.all_modalidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 4.5rem;
+}
+
+.modalidade {
+  flex: 1 1 18rem;
+  background-color: var(--color_secundary);
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  border-left: 4px solid var(--color_red_dark);
+}
+
+.modalidade h3 {
+  margin-top: 0;
 }
 /*id section*/
 #logo_akg {
@@ -210,18 +219,19 @@ th {
   width: fit-content;
   font-weight: bold;
   margin-top: 1rem;
+  margin-bottom: 4.5rem;
   
 }
 #logotipo {
   width: var(--logo_size);
   height: var(--logo_size);
 }
+#main_img{
 
-/* imagens e blocos */
-#apresentation_poster {
-  display: block;
-  width: calc(100% + 4 * var(--space_page));
-  height: auto;
-  margin: 1rem calc(var(--space_page) * -2);
+  margin: 0 calc(var(--space_page) * -2);
+  padding-bottom: 5rem;
 }
-
+#apresentation_poster{
+  display: block;
+  width: 100%;
+}

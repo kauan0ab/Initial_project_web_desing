@@ -79,7 +79,6 @@ nav a[aria-current="page"] {
 /* Header */
 .cabecalho {
   background-color: var(--color_primary);
-  border-bottom: 2px solid var(--color_accent_purple);
   position: sticky;
   top: 0;
   z-index: 10;

@@ -5,12 +5,12 @@
 
 :root {
   --color_primary: #0F0F1A;
-  --color_secundary: #2A1618;
-  --color_d: #0e0e23;
-  --color_accent: #c62839;
-  --color_accent_dark: #4b2f8a;
-  --color_text: #ffffff;
+  --color_secundary: #1a1a33;
+  --color_d: #14142b;
+  --color_accent: #e0334a;
+  --color_text: #f2f2f7;
   --color_button_text: #ffffff;
+  --color_accent_dark: #5b3fb5;
   --gradient_cta: linear-gradient(90deg, var(--color_accent_dark), var(--color_accent));
   --font_size: 1.5rem;
   --logo_size: 3.45rem;
@@ -23,10 +23,11 @@
 /* base */
 
 body {
-  background-color: white;
+  background-color: var(--color_primary);
   color: var(--color_text);
   min-height: 100vh;
   display: flex;
+  font-family: Arial, sans-serif;
   flex-direction: column;
 }
 
@@ -138,7 +139,7 @@ nav a {
 
 .cards {
   background-color: var(--color_secundary);
-  color: var(--color_text);
+  color: var(--color_tex);
   border-radius: 1rem;
   padding: 1.5rem;
   flex: 1 1 16rem;
