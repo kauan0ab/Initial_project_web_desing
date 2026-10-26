@@ -11,7 +11,7 @@
   --color_red_dark: #621d34;
   --color_text: #f2f2f7;
   --color_button_text: #ffffff;
-    --color_accent_dark: #5b3fb5;
+  --color_accent_dark: #5b3fb5;
   --gradient_cta: linear-gradient(90deg, var(--color_accent_dark), var(--color_accent));
   --font_size: 1.5rem;
   --logo_size: 3.45rem;
@@ -136,7 +136,7 @@ tbody tr:hover {
 
 .btn_ingressos {
   background: var(--gradient_cta);
-  padding: 0.7rem .5rem;
+  padding: 0.7rem 1.5rem;
   border-radius: 99px;
   font-weight: bold;
 }
